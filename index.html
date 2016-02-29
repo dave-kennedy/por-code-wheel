@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pool of Radiance Code Wheel</title>
+        <style>
+            #container {
+                width: 822px;
+                height: 822px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+            #inner {
+                background: url(img/inner.png) center center no-repeat;
+                width: 822px;
+                height: 822px;
+                position: absolute;
+            }
+            #outer {
+                background: url(img/outer.png) center center no-repeat;
+                width: 822px;
+                height: 822px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="outer"></div>
+            <div id="inner"></div>
+        </div>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script>
+            $(function() {
+                var target = $('#outer'),
+                    originX = target.offset().left + target.width() / 2,
+                    originY = target.offset().top + target.height() / 2,
+                    dragging = false,
+                    startDegrees = 0,
+                    prevDegrees = 0,
+                    currDegrees = 0;
+                
+                $('#container').mousedown(function(e) {
+                    var mouseX = e.pageX,
+                        mouseY = e.pageY,
+                        radians = Math.atan2(mouseY - originY, mouseX - originX);
+                    
+                    dragging = true;
+                    startDegrees = radians * (180 / Math.PI);
+                });
+                
+                $(document).mouseup(function() {
+                    dragging = false;
+                    prevDegrees = currDegrees;
+                }).mousemove(function(e) {
+                    if (!dragging) {
+                        return;
+                    }
+                    
+                    var mouseX = e.pageX,
+                        mouseY = e.pageY,
+                        radians = Math.atan2(mouseY - originY, mouseX - originX);
+                    
+                    currDegrees = radians * (180 / Math.PI) - startDegrees + prevDegrees;
+                    
+                    target.css('-webkit-transform', 'rotate(' + currDegrees + 'deg)');
+                    target.css('-ms-transform', 'rotate(' + currDegrees + 'deg)');
+                    target.css('transform', 'rotate(' + currDegrees + 'deg)');
+                });
+            });
+        </script>
+    </body>
+</html>
