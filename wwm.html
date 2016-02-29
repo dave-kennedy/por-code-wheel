@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pool of Radiance Code Wheel</title>
+        <style>
+            .title, .runes, .paths, .buttons {
+                text-align: center;
+            }
+            .rune, .path {
+                border: 2px solid transparent;
+                cursor: pointer;
+            }
+            .selected {
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="title">Choose Espruar Rune:</h2>
+        <div class="runes">
+            <img class="rune espruar" data-code="1" src="img/esp01.gif" />
+            <img class="rune espruar" data-code="2" src="img/esp02.gif" />
+            <img class="rune espruar" data-code="3" src="img/esp03.gif" />
+            <img class="rune espruar" data-code="4" src="img/esp04.gif" />
+            <img class="rune espruar" data-code="5" src="img/esp05.gif" />
+            <img class="rune espruar" data-code="6" src="img/esp06.gif" />
+            <img class="rune espruar" data-code="7" src="img/esp07.gif" />
+            <img class="rune espruar" data-code="8" src="img/esp08.gif" />
+            <img class="rune espruar" data-code="9" src="img/esp09.gif" />
+            <img class="rune espruar" data-code="10" src="img/esp10.gif" />
+            <img class="rune espruar" data-code="11" src="img/esp11.gif" />
+            <img class="rune espruar" data-code="12" src="img/esp12.gif" />
+        </div>
+        <div class="runes">
+            <img class="rune espruar" data-code="13" src="img/esp13.gif" />
+            <img class="rune espruar" data-code="14" src="img/esp14.gif" />
+            <img class="rune espruar" data-code="15" src="img/esp15.gif" />
+            <img class="rune espruar" data-code="16" src="img/esp16.gif" />
+            <img class="rune espruar" data-code="17" src="img/esp17.gif" />
+            <img class="rune espruar" data-code="18" src="img/esp18.gif" />
+            <img class="rune espruar" data-code="19" src="img/esp19.gif" />
+            <img class="rune espruar" data-code="20" src="img/esp20.gif" />
+            <img class="rune espruar" data-code="21" src="img/esp21.gif" />
+            <img class="rune espruar" data-code="22" src="img/esp22.gif" />
+            <img class="rune espruar" data-code="23" src="img/esp23.gif" />
+            <img class="rune espruar" data-code="24" src="img/esp24.gif" />
+        </div>
+        <div class="runes">
+            <img class="rune espruar" data-code="25" src="img/esp25.gif" />
+            <img class="rune espruar" data-code="26" src="img/esp26.gif" />
+            <img class="rune espruar" data-code="27" src="img/esp27.gif" />
+            <img class="rune espruar" data-code="28" src="img/esp28.gif" />
+            <img class="rune espruar" data-code="29" src="img/esp29.gif" />
+            <img class="rune espruar" data-code="30" src="img/esp30.gif" />
+            <img class="rune espruar" data-code="31" src="img/esp31.gif" />
+            <img class="rune espruar" data-code="32" src="img/esp32.gif" />
+            <img class="rune espruar" data-code="33" src="img/esp33.gif" />
+            <img class="rune espruar" data-code="34" src="img/esp34.gif" />
+            <img class="rune espruar" data-code="35" src="img/esp35.gif" />
+            <img class="rune espruar" data-code="36" src="img/esp36.gif" />
+        </div>
+        <h2 class="title">Choose Dethek Rune:</h2>
+        <div class="runes">
+            <img class="rune dethek" data-code="1" src="img/det01.gif" />
+            <img class="rune dethek" data-code="2" src="img/det02.gif" />
+            <img class="rune dethek" data-code="3" src="img/det03.gif" />
+            <img class="rune dethek" data-code="4" src="img/det04.gif" />
+            <img class="rune dethek" data-code="5" src="img/det05.gif" />
+            <img class="rune dethek" data-code="6" src="img/det06.gif" />
+            <img class="rune dethek" data-code="7" src="img/det07.gif" />
+            <img class="rune dethek" data-code="8" src="img/det08.gif" />
+            <img class="rune dethek" data-code="9" src="img/det09.gif" />
+            <img class="rune dethek" data-code="10" src="img/det10.gif" />
+            <img class="rune dethek" data-code="11" src="img/det11.gif" />
+            <img class="rune dethek" data-code="12" src="img/det12.gif" />
+        </div>
+        <div class="runes">
+            <img class="rune dethek" data-code="13" src="img/det13.gif" />
+            <img class="rune dethek" data-code="14" src="img/det14.gif" />
+            <img class="rune dethek" data-code="15" src="img/det15.gif" />
+            <img class="rune dethek" data-code="16" src="img/det16.gif" />
+            <img class="rune dethek" data-code="17" src="img/det17.gif" />
+            <img class="rune dethek" data-code="18" src="img/det18.gif" />
+            <img class="rune dethek" data-code="19" src="img/det19.gif" />
+            <img class="rune dethek" data-code="20" src="img/det20.gif" />
+            <img class="rune dethek" data-code="21" src="img/det21.gif" />
+            <img class="rune dethek" data-code="22" src="img/det22.gif" />
+            <img class="rune dethek" data-code="23" src="img/det23.gif" />
+            <img class="rune dethek" data-code="24" src="img/det24.gif" />
+        </div>
+        <div class="runes">
+            <img class="rune dethek" data-code="25" src="img/det25.gif" />
+            <img class="rune dethek" data-code="26" src="img/det26.gif" />
+            <img class="rune dethek" data-code="27" src="img/det27.gif" />
+            <img class="rune dethek" data-code="28" src="img/det28.gif" />
+            <img class="rune dethek" data-code="29" src="img/det29.gif" />
+            <img class="rune dethek" data-code="30" src="img/det30.gif" />
+            <img class="rune dethek" data-code="31" src="img/det31.gif" />
+            <img class="rune dethek" data-code="32" src="img/det32.gif" />
+            <img class="rune dethek" data-code="33" src="img/det33.gif" />
+            <img class="rune dethek" data-code="34" src="img/det34.gif" />
+            <img class="rune dethek" data-code="35" src="img/det35.gif" />
+            <img class="rune dethek" data-code="36" src="img/det36.gif" />
+        </div>
+        <h2 class="title">Choose Path:</h2>
+        <div class="paths">
+            <img class="path" data-code="0" src="img/path1.png" />
+            <img class="path" data-code="12" src="img/path2.png" />
+            <img class="path" data-code="24" src="img/path3.png" />
+        </div>
+        <div class="buttons">
+            <button id="decode">Decode</button>
+        </div>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script>
+            $(function () {
+                var words = ['AXEIAX', 'BEWARE', 'COPPER', 'DRAGON', 'EFREET', 'FRIEND', 'GOOGLE',
+                    'HARASH', 'IXYVSI', 'JUNGLE', 'KNIGHT', 'LQLGMT', 'MLSSXS', 'NOTNOW', 'OTTAWA',
+                    'POOLRD', 'QUOHOG', 'RHUDIA', 'SAVIOR', 'TEMPLE', 'UICDRH', 'VULCAN', 'WYVERN',
+                    'XRSEHK', 'YUFSTA', 'ZOMBIE', '1GKKRY', '2IOLCD', '3MASAI', '4NINER', '5GUNGA',
+                    '6BROWN' ,'7GNATS', '80ASIS', '9TROUT', '0SOMAS'];
+
+                $('.rune.espruar').click(function () {
+                    $('.rune.espruar.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                });
+
+                $('.rune.dethek').click(function () {
+                    $('.rune.dethek.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                });
+
+                $('.path').click(function () {
+                    $('.path.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                });
+
+                $('#decode').click(function () {
+                    var espruar = $('.rune.espruar.selected').data('code'),
+                        dethek = $('.rune.dethek.selected').data('code'),
+                        path = $('.path.selected').data('code'),
+                        decode,
+                        word;
+
+                    if (espruar == undefined || dethek == undefined || path == undefined) {
+                        alert('You must select both runes and a path.');
+                        return;
+                    }
+
+                    decode = (espruar + dethek + path + 35) % 36;
+                    word = words[decode]
+
+                    alert(word);
+                });
+            });
+        </script>
+    </body>
+</html>

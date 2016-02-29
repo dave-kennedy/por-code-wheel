@@ -41,16 +41,16 @@
                     startDegrees = 0,
                     prevDegrees = 0,
                     currDegrees = 0;
-                
+
                 $('#container').mousedown(function(e) {
                     var mouseX = e.pageX,
                         mouseY = e.pageY,
                         radians = Math.atan2(mouseY - originY, mouseX - originX);
-                    
+
                     dragging = true;
                     startDegrees = radians * (180 / Math.PI);
                 });
-                
+
                 $(document).mouseup(function() {
                     dragging = false;
                     prevDegrees = currDegrees;
@@ -58,13 +58,13 @@
                     if (!dragging) {
                         return;
                     }
-                    
+
                     var mouseX = e.pageX,
                         mouseY = e.pageY,
                         radians = Math.atan2(mouseY - originY, mouseX - originX);
-                    
+
                     currDegrees = radians * (180 / Math.PI) - startDegrees + prevDegrees;
-                    
+
                     target.css('-webkit-transform', 'rotate(' + currDegrees + 'deg)');
                     target.css('-ms-transform', 'rotate(' + currDegrees + 'deg)');
                     target.css('transform', 'rotate(' + currDegrees + 'deg)');
